@@ -22,7 +22,7 @@ static const Bool showsystray       = True;     /* False means no systray */
 
 
 /* tagging */
-static const char *tags[] = { "1ha", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "1hb", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
     /* xprop(1):
@@ -38,7 +38,7 @@ static const Rule rules[] = {
     { "Krusader"    ,  NULL,       NULL,       1 << 5,       False,       -1 },
     { "Thunderbird" ,  NULL,       NULL,       1 << 7,       False,       -1 },
     { "Firefox"     ,  NULL,       NULL,       1 << 8,       False,       -1 },
-    { "chromium"    ,  NULL,       NULL,       1 << 8,       False,       -1 },
+    { NULL          ,  "chromium", "Chromium", 1 << 8, False,       -1 },
 
 };
 
